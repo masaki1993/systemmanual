@@ -1,0 +1,314 @@
+<h1><a href="https://app.tango.us/app/workflow/e3657d4b-47e9-4dbf-be11-dc0852025e70?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>入退室取り消しボタン</a></h1>
+<div><b>Creation Date:</b> Oct 07, 2024</div>
+<div><b>Created By:</b> システム開発 えすこーと</div>
+<div><a href="https://app.tango.us/app/workflow/e3657d4b-47e9-4dbf-be11-dc0852025e70?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>View most recent version on Tango.ai</a></div>
+<div style="height: 24px">&#8203;</div>
+<hr />
+<div style="height: 24px">&#8203;</div>
+
+
+<div><h2><a href="https://www.appsheet.com/template/appdef?appName=%E5%85%A5%E9%80%80%E5%AE%A4%E3%82%A2%E3%83%97%E3%83%AAver7-643033999&quickStart=False&appId=726ab5d8-0097-48c3-bac1-1a8e48ef3c72#Data.Slices.%E7%94%9F%E5%BE%92%EF%BC%88%E5%A5%91%E7%B4%84%E4%B8%ADAND%E5%BD%93%E6%97%A5%E5%88%A9%E7%94%A8%E3%81%AA%E3%81%97%EF%BC%89"># AppSheet</a></h2></div>
+
+<div><h3>1. 【現行】入退室アプリを開く。メニュー「入退室」をクリック</h3>
+<img src="https://images.tango.us/workflows/e3657d4b-47e9-4dbf-be11-dc0852025e70/steps/b464e4a4-baf8-46f3-ba69-453d7a31d18b/32807e8c-18d8-491e-8dff-099345f9ff48.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5437&fp-y=0.3034&fp-z=1.7126&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=308&mark-y=339&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01ODMmaD04NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="【現行】入退室アプリを開く。メニュー「入退室」をクリック" />
+</div>
+
+<div><h3>2. 間違って押してしまった生徒を選択</h3>
+<img src="https://images.tango.us/workflows/e3657d4b-47e9-4dbf-be11-dc0852025e70/steps/7c8457b4-7251-404b-91ae-210d4d190d92/7b10ac2e-81f2-4f7d-a298-3d7fdff08b1f.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.7050&fp-y=0.2940&fp-z=1.6716&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=0&mark-y=341&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMjE2Jmg9NjgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="間違って押してしまった生徒を選択" />
+</div>
+
+<div><h3>3.  入室取り消し、又は退室取り消しをクリック</h3>
+<img src="https://images.tango.us/workflows/e3657d4b-47e9-4dbf-be11-dc0852025e70/steps/3d4b24cb-e4a4-4717-afbc-444437b6485c/3352cbaf-a973-4854-a32d-b311a3630e33.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.4500&fp-y=0.4358&fp-z=2.5962&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=508&mark-y=297&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xODUmaD0xNjkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt=" 入室取り消し、又は退室取り消しをクリック" />
+</div>
+
+<div><h3>4. 再度ボタンを押します。これで完了です。</h3>
+<img src="https://images.tango.us/workflows/e3657d4b-47e9-4dbf-be11-dc0852025e70/steps/9ef3cdca-18b2-4cf2-b175-fccb5df13350/97deb740-1fcd-41cf-b2bd-5b22cdc08338.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.7765&fp-y=0.5449&fp-z=2.8462&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=424&mark-y=325&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNTImaD0xMTEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="再度ボタンを押します。これで完了です。" />
+</div>
+
+<br/>
+<hr/>
+<div>
+<span>Created with </span><a href="https://tango.ai?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank' style='color: #256EFF'>Tango.ai
+    </a>
+</div>put this in index.html as well
+
+
+<h1><a href="https://app.tango.us/app/workflow/50a7640d-2ec9-4a15-b6d4-5de87b439cec?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>利用調査書送信方法及びメールアドレスの取得方法（生徒基本情報管理アプリ）</a></h1>
+<div><b>Creation Date:</b> Nov 18, 2024</div>
+<div><b>Created By:</b> システム開発 えすこーと</div>
+<div><a href="https://app.tango.us/app/workflow/50a7640d-2ec9-4a15-b6d4-5de87b439cec?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>View most recent version on Tango.ai</a></div>
+<div style="height: 24px">&#8203;</div>
+<hr />
+<div style="height: 24px">&#8203;</div>
+
+
+<div><h2><a href="https://www.appsheet.com/start/ee0f2998-9fc1-4945-80e3-83e45dabaab4?platform=desktop&version=1.000119#vss=H4sIAAAAAAAAA6WQP09CMRTFv8udu7h2BWKM0QXDQh0qvU0a-tqX11YlL00cHFw17g4mMLkxEAY-DHkGPgYtfwKrON5zc373nFvDo8KnrueDIdB-fZyucQQUagZ3oxIZUAYta3xlNQPC4JYXO3H1-fW7-GhmL-vxhEGEeE8ODI8OaP13BP1_CgJKoPFKKqwyL7sTZ-9N6-xMwqkPIoEieP6gcRs--5S7Mh2h_I0VaZZcOyQglfZYtVHyoL3bfq1ldSjMHnpZ2VBepCM7tcd1yPLy_buZv62mr83sJ70pxnRP2kFwKHqp7pk1c8DnkhtxEjFuAOOP0hzVAQAA&view=%E7%94%9F%E5%BE%92%E4%B8%80%E8%A6%A7&appName=%E3%80%90%E7%8F%BE%E8%A1%8C%E3%80%91%E7%94%9F%E5%BE%92%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E7%AE%A1%E7%90%86ver52-643033999"># AppSheet</a></h2></div>
+
+<div><h3>1. 生徒一覧をクリック</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/84c46a39-6075-4b45-8741-3b973e1156b2/af3774ed-45b2-42af-9117-2c07149d751e.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0188&fp-y=0.1294&fp-z=2.8563&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=9&mark-y=222&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTEmaD0xMDcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="生徒一覧をクリック" />
+</div>
+
+<div><h3>2. 該当生徒を選択</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/21a69144-d2cc-4a84-aede-718240a4d722/77126d88-ba82-4660-8f7c-76f0368e34db.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9637&fp-y=0.1305&fp-z=2.9261&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1027&mark-y=239&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05MSZoPTkxJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="該当生徒を選択" />
+</div>
+
+<div><h3>3. 「2025年4月度利用調査書フォーム送信」をクリック</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/6cf20c14-cd65-4257-aba5-5dd45f6c3f27/a0cf57f6-570f-4f14-b01f-46e82ff5360e.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.8728&fp-y=0.1305&fp-z=2.8908&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=709&mark-y=232&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05OSZoPTk5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="「2025年4月度利用調査書フォーム送信」をクリック" />
+</div>
+
+<div><h3>4. 確認ボタンを押下⇨これで利用調査書が送付されます。</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/6f0ca137-3ee5-4134-92ef-661656979f23/0a064059-26ea-411c-8d43-47989cde37ee.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5584&fp-y=0.5673&fp-z=2.1364&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=385&mark-y=336&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00MzEmaD03NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="確認ボタンを押下⇨これで利用調査書が送付されます。" />
+</div>
+
+<div><h3>5. CSVボタンを押す。少し時間がかかりますが、CSVがダウンロードされます</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/770f90c9-e3a5-4a2b-9275-d253db7ba5c7/ccb223fa-75e6-4580-b104-9c0377f1e699.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.8618&fp-y=0.1305&fp-z=2.8908&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=671&mark-y=232&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05OSZoPTk5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="CSVボタンを押す。少し時間がかかりますが、CSVがダウンロードされます" />
+</div>
+
+<div><h3>6. OKとする</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/22eb1d06-a3f1-4a42-88c7-03d2cf54c813/ad80e889-11a6-42e7-9387-94ba140c5b96.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5592&fp-y=0.5863&fp-z=1.8793&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=596&mark-y=384&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDUmaD02NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="OKとする" />
+</div>
+
+<div><h2><a href="https://docs.google.com/spreadsheets/d/1GhzFTxdTIOwPkKTzUgz20LRmnm4X5likw2kgzHUUKKU/edit?gid=0#gid=0"># Google Docs</a></h2></div>
+
+<div><h3>7. URLにsheets.newを入力し、新しいspreadsheetを作成。⇨「ファイル」を選択</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/588c9a72-8840-4388-afca-030ee9174cf1/cf0ff208-3f2c-4ffd-90ae-7ee05165b2bc.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0584&fp-y=0.0496&fp-z=2.8416&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=111&mark-y=66&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNzcmaD03NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="URLにsheets.newを入力し、新しいspreadsheetを作成。⇨「ファイル」を選択" />
+</div>
+
+<div><h3>8. 「インポート」を押下</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/29728d37-c054-4aa8-a8d3-a9481de86fdb/1bffb04d-af7e-4eef-b42b-dcbdba44a599.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.1395&fp-y=0.1524&fp-z=1.9499&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=77&mark-y=191&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00OTgmaD02MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="「インポート」を押下" />
+</div>
+
+<div><h3>9. アップロード</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/109fb7af-bf9d-407c-b6c5-88781cc93365/c081c883-58c7-4b88-9b0b-0c4bb2a27868.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5409&fp-y=0.2651&fp-z=2.6239&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=472&mark-y=316&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNTUmaD0xMTQmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="アップロード" />
+</div>
+
+<div><h3>10. 参照を押し、ダウンロードされたCSVファイルを選択</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/15534301-10a5-488d-b19f-1eee756c2165/c8b0a94d-8de9-473e-8620-a4707066eb84.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.4945&fp-y=0.6378&fp-z=2.8208&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=508&mark-y=325&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xODUmaD05NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="参照を押し、ダウンロードされたCSVファイルを選択" />
+</div>
+
+<div><h3>11. データをインポート</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/f9fa2254-0771-4d66-b035-3885a2c57ef3/f783ebb9-7978-4cd7-b50e-9ac2dab9aa88.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5120&fp-y=0.6336&fp-z=2.3770&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=428&mark-y=332&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNDQmaD04MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="データをインポート" />
+</div>
+
+<div><h3>12. 全会員のデータが表示されます。CJ,CK列に保護者メアドがありますので、該当生徒のものをコピーできます。（フィルタを使うと、ステータス「予約中」で絞り込むことができます。）このメールに対して、習い事スケジュールと詳細を送付ください。</h3>
+<img src="https://images.tango.us/workflows/50a7640d-2ec9-4a15-b6d4-5de87b439cec/steps/62072f41-b864-4198-80a3-7d03d8a4fe1f/2c217162-79c2-4a4e-ac34-148c6d811037.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.4870&fp-y=0.5543&fp-z=1.0026&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=3&mark-y=106&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTY2Jmg9NjE0JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="全会員のデータが表示されます。CJ,CK列に保護者メアドがありますので、該当生徒のものをコピーできます。（フィルタを使うと、ステータス「予約中」で絞り込むことができます。）このメールに対して、習い事スケジュールと詳細を送付ください。" />
+</div>
+
+<br/>
+<hr/>
+<div>
+<span>Created with </span><a href="https://tango.ai?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank' style='color: #256EFF'>Tango.ai
+    </a>
+</div>''add this now
+
+
+<h1><a href="https://app.tango.us/app/workflow/2259d177-3584-4ab8-840e-80df7ba0b1c4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>問い合わせアプリで契約書フォームとジャックスオンラインのメールを作成する方法</a></h1>
+<div><b>Creation Date:</b> Oct 04, 2024</div>
+<div><b>Created By:</b> システム開発 えすこーと</div>
+<div><a href="https://app.tango.us/app/workflow/2259d177-3584-4ab8-840e-80df7ba0b1c4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>View most recent version on Tango.ai</a></div>
+<div style="height: 24px">&#8203;</div>
+<hr />
+<div style="height: 24px">&#8203;</div>
+
+
+<div><h2><a href="https://www.appsheet.com/template/AppDef?appName=%E5%A5%91%E7%B4%84%E3%82%A2%E3%83%97%E3%83%AAv2-643033999&appId=e5817f6d-c920-4b7a-8dac-9a86a490dd14&quickStart=False#Behavior.Actions.%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%9B%9E%E7%AD%94%205.%E3%83%A1%E3%83%BC%E3%83%AB%E6%96%87%E4%BD%9C%E6%88%90"># AppSheet</a></h2></div>
+
+<div><h3>1. 問い合わせアプリで、問い合わせリストを表示</h3>
+<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/67ecfe4a-c010-443f-b80a-99721ae184cd/6091fe7e-533a-4402-8733-f4c957d39a9f.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0222&fp-y=0.1344&fp-z=2.8440&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=10&mark-y=264&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMzEmaD0xMjYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="問い合わせアプリで、問い合わせリストを表示" />
+</div>
+
+<div><h3>2. 送信する親御さんを選択</h3>
+<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/ce18ea0c-0671-4436-8a52-ba38297c6f42/0a61ad7a-cd0a-4933-9739-7c046d941d23.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5203&fp-y=0.2656&fp-z=1.0457&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=2&mark-y=216&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTk2Jmg9NDQmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="送信する親御さんを選択" />
+</div>
+
+<div><h3>3. メール文作成をクリック</h3>
+<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/d40a31ff-6138-41ec-9b52-a44d8faff950/01ada1b9-6e9a-4d87-b30f-dc20effd906a.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5882&fp-y=0.2301&fp-z=2.4933&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=508&mark-y=320&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xODQmaD0yMTYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="メール文作成をクリック" />
+</div>
+
+<div><h3>4. メールテンプレを選ぶ</h3>
+<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/5130d51a-934c-4754-b99b-63ce16939008/87d3f897-62ae-4fe2-b76c-562964be3033.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6840&fp-y=0.2688&fp-z=1.8736&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=110&mark-y=376&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NzkmaD0xMDMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="メールテンプレを選ぶ" />
+</div>
+
+<div><h3>5. 文章内で修正する部分があれば、修正する</h3>
+<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/5b7f3b8c-93cb-45ef-82e2-ba1621bb3f24/11eb2797-6e11-4974-970e-203d534ce451.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6591&fp-y=0.6839&fp-z=1.4625&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=269&mark-y=447&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NjQmaD0zNTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="文章内で修正する部分があれば、修正する" />
+</div>
+
+<div><h3>6. 保存を押したら、メールが送信されます。ご不安であれば、文面をご自分のメールにコピペしてご使用いただいても構いません。</h3>
+<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/ede45794-5fd0-4e13-a98a-9a81cc6b2d00/bb30bbb6-c7ce-4005-91f7-ed28d4be67a4.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9632&fp-y=0.0306&fp-z=2.9063&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=975&mark-y=21&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xOTMmaD0xMTAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="保存を押したら、メールが送信されます。ご不安であれば、文面をご自分のメールにコピペしてご使用いただいても構いません。" />
+</div>
+
+<br/>
+<hr/>
+<div>
+<span>Created with </span><a href="https://tango.ai?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank' style='color: #256EFF'>Tango.ai
+    </a>
+</div>
+
+<h1><a href="https://app.tango.us/app/workflow/0139da0d-f2c7-43fa-a489-1869695eae95?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>振替登録の仕方</a></h1>
+<div><p>生徒利用予定・実績から、「振替元」を登録し、その後、その「振替元」を活用して「振替先」を登録します。<br>今回は、「前田健吾さん」の振替を行います（４月９日から４月１０日への振替）</p></div>
+<div><b>Creation Date:</b> Apr 09, 2024</div>
+<div><b>Created By:</b> システム開発 えすこーと</div>
+<div><a href="https://app.tango.us/app/workflow/0139da0d-f2c7-43fa-a489-1869695eae95?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>View most recent version on Tango.ai</a></div>
+<div style="height: 24px">&#8203;</div>
+<hr />
+<div style="height: 24px">&#8203;</div>
+
+
+<div><h2><a href="https://www.appsheet.com/start/06d7c6d1-edc8-4518-8439-64604675d8b3?platform=desktop#viewStack[0][identifier][Type]=Control&viewStack[0][identifier][Name]=%E4%BF%9D%E8%82%B2%E7%94%9F%E5%BE%92&viewStack[1][identifier][Type]=Control&viewStack[1][identifier][Name]=%E4%BF%9D%E8%82%B2%E7%94%9F%E5%BE%92_Detail&viewStack[1][mutableState][ControlName]=%E4%BF%9D%E8%82%B2%E7%94%9F%E5%BE%92_Detail&viewStack[1][mutableState][Root]=detail&viewStack[1][mutableState][DataStamp]=2024-04-09T10:53:30.839Z&viewStack[1][mutableState][RowKey]=0e869e4b&appName=3%E7%94%9F%E5%BE%92%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E7%AE%A1%E7%90%86ver3Sene-G-643033999"># AppSheet</a></h2></div>
+
+<div><h3>1. 生徒利用予定・実績（日付毎）を開く</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/00a15193-d71b-448e-9feb-854006ffc373/4747ea8e-6412-44f3-8e33-d5799345a4a8.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.1213&fp-y=0.0834&fp-z=2.1990&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=116&mark-y=106&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00MDgmaD02NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="生徒利用予定・実績（日付毎）を開く" />
+</div>
+
+<div><h3>2. 該当の生徒を選ぶ</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/83af4068-6225-4db3-84dc-956388179bc8/49fd55f0-9afe-4f98-ac04-d81d81d1d508.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5961&fp-y=0.3681&fp-z=1.2419&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=2&mark-y=322&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTk2Jmg9NDUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="該当の生徒を選ぶ" />
+</div>
+
+<div><h3>3. 該当生徒の該当の日付の画面で、「振替元一括」を押す。これは、保育と習い事全てを振替（振替元）とすることができるボタンです。</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/4ece0315-f557-4603-a731-a7a8dca91b60/8aafff09-a247-424c-b7cd-6d472b9cf37b.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0866&fp-y=0.3347&fp-z=2.6224&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=190&mark-y=297&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD0xNjEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="該当生徒の該当の日付の画面で、「振替元一括」を押す。これは、保育と習い事全てを振替（振替元）とすることができるボタンです。" />
+</div>
+
+<div><h3>4. 確認画面が出てくるので、そのまま進む</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/32d19fba-e159-41e7-be3d-1c7018028765/447a9e96-4d77-4618-a611-a3ebcb523622.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5502&fp-y=0.5667&fp-z=2.7652&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=498&mark-y=328&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMDUmaD05OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="確認画面が出てくるので、そのまま進む" />
+</div>
+
+<div><h3>5. これで、「振替元」登録は終了しました。続いて、「振替先」の日付を作成します。「追加」からもできますが、「振替元」の日付にて、「コピー」をすると、データがそのまま引き継がれて、便利です。</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/42602e21-6497-4b5d-b892-65b5da44d266/1ef1be02-2eb7-491e-9703-59969aa0a389.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.8793&fp-y=0.0834&fp-z=2.9087&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=731&mark-y=135&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NiZoPTk2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="これで、「振替元」登録は終了しました。続いて、「振替先」の日付を作成します。「追加」からもできますが、「振替元」の日付にて、「コピー」をすると、データがそのまま引き継がれて、便利です。" />
+</div>
+
+<div><h3>6. 振替先の日付を入力</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/47470545-772c-4be5-9b07-e5e3eac14564/ca61da29-0e39-48c3-87d0-6267daaab3d7.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.7879&fp-y=0.4082&fp-z=2.7984&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=170&mark-y=317&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04NjEmaD0xMjEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="振替先の日付を入力" />
+</div>
+
+<div><h3>7. 振替先を選択</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/10691fc1-4267-4d07-a39a-d9a9ed3f0e56/cd01cae2-3bdf-4e99-8253-059191edc08d.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.8505&fp-y=0.4223&fp-z=2.7902&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=486&mark-y=316&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00MjYmaD0xMjMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="振替先を選択" />
+</div>
+
+<div><h3>8. 問題なければ、保存を押す</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/56dcba79-6731-4e5f-99b4-f1b15cedf4fe/fc8f6a4c-835c-48a1-b23f-0ef75b55e357.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9685&fp-y=0.0297&fp-z=2.9176&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1007&mark-y=18&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD05NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="問題なければ、保存を押す" />
+</div>
+
+<div><h3>9. 「【保育】振替元を選ぶ」を押す</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/7ee0a985-8008-45b1-a14e-7db6ea711035/8611345d-eada-46d7-a697-c0eff8df2e15.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0866&fp-y=0.3952&fp-z=2.5124&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=182&mark-y=284&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTgmaD0xODYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="「【保育】振替元を選ぶ」を押す" />
+</div>
+
+<div><h3>10. 振替元の日付を選択。ここでは、 2024/04/09【保育】</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/fe1574a9-b942-4d72-92d6-17cfd56ea60c/f6f0e55e-8658-4ab6-b312-9eb585b55d04.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5416&fp-y=0.5287&fp-z=2.1314&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=384&mark-y=329&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00MzMmaD05NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="振替元の日付を選択。ここでは、 2024/04/09【保育】" />
+</div>
+
+<div><h3>11. 保存。以上です！残りの振替可能な日などは、「生徒一覧」から確認できます。</h3>
+<img src="https://images.tango.us/workflows/0139da0d-f2c7-43fa-a489-1869695eae95/steps/39865e08-794b-43fe-ac77-64604b447419/7d695948-9c8b-407d-b28d-c9f8beab9c08.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6157&fp-y=0.6064&fp-z=2.8801&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=518&mark-y=331&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjMmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="保存。以上です！残りの振替可能な日などは、「生徒一覧」から確認できます。" />
+</div>
+
+<br/>
+<hr/>
+<div>
+<span>Created with </span><a href="https://tango.ai?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank' style='color: #256EFF'>Tango.ai
+    </a>
+</div>''add this 
+
+<h1><a href="https://app.tango.us/app/workflow/ea82229e-6bb6-4fe6-b440-d685e507e6e8?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>長期休みアプリにおけるフィルター→CSVエクスポートの使い方
+/①長期休みイベントの参加者を正確に把握→名簿の作成
+/②該当生徒でフィルターすれば、生徒一人一人のスケジュールを１枚にまとめることにも使えます</a></h1>
+<div><p>ここでは、①のやり方をお伝えしますが、フィルターのところで、イベントの代わりに該当生徒を選択すれば、生徒一人一人のスケジュールを１枚にまとめることに使えます</p></div>
+<div><b>Creation Date:</b> Jul 23, 2024</div>
+<div><b>Created By:</b> システム開発 えすこーと</div>
+<div><a href="https://app.tango.us/app/workflow/ea82229e-6bb6-4fe6-b440-d685e507e6e8?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>View most recent version on Tango.ai</a></div>
+<div style="height: 24px">&#8203;</div>
+<hr />
+<div style="height: 24px">&#8203;</div>
+
+
+<div><h2><a href="https://www.appsheet.com/start/1dd1ad06-caa7-4b2e-94e3-ce378c7784ce?platform=desktop#vss=H4sIAAAAAAAAA7WSu07DQBBF_2VqG9mOH4lbHlKEoIAoBTFCQ3YtrbC9kb0GIssFSQMlBR1SqlRUVBApEh9jHuIvWCdEFKAQIJRzd_bM3JnJ4JjRk12B7SNwW9lHtEm74ELmQaPboR64HqzySMQ88EDxYBvDqfh6dfd8PXgcXxZnD0VvVPRui9590R8W_XHRv_Egh1z5OfXlYvR0PvzMO9jgcTiB7iszqKAJuNkyOnX_w74CjNBIMJ_RuKxQ8iT5nSafS5YU5pPkFCFMBR4GdGJZknIp_X2Qv_D8LXNRy3NBXzieERb6rsAO50Km-dNoDQVKUNiRkqEZpqo5qlFpaIZrWK5urzhmxbIda69MpT6mgWhikJa31ZK3xpJ6tE6Y2OJElhZxShUQMUYJtgXjUZ1IKrUs3TAdSyV6jahmzXdUrGJVNdHWSc1CzTFtyMu1-bydJpQ05eCXdmRlg6cdjMi0RR-DhOZv-YSrM94DAAA=&view=%E9%95%B7%E6%9C%9F%E4%BC%91%E3%81%BF%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&appName=%E3%80%90%E7%8F%BE%E8%A1%8C%E3%80%912024%E5%B9%B4%E5%A4%8F%E4%BC%91%E3%81%BF%E9%95%B7%E6%9C%9F%E4%BC%91%E3%81%BF%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86ver2-643033999"># AppSheet</a></h2></div>
+
+<div><h3>1. 長期休みアプリにて、「設定」を選択</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/bcae11be-4ee9-424f-803a-189627c19677/1d19a154-cf9b-4c62-80f6-2643c6353d10.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0190&fp-y=0.7039&fp-z=3.0049&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=9&mark-y=321&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTgmaD0xMTMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="長期休みアプリにて、「設定」を選択" />
+</div>
+
+<div><h3>2. 「本部」を選択</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/20cfc34a-4a42-4a4e-acd0-b762b3193dbb/0c49558e-5e12-449c-891c-a48367537f02.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.4836&fp-y=0.2164&fp-z=2.7502&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=495&mark-y=316&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMTAmaD0xMjMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="「本部」を選択" />
+</div>
+
+<div><h3>3. 「保存」を選択</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/907a9292-2dd3-4c30-9de7-d0a62ee52756/b1d45008-a315-4584-993f-2214c3a380a2.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9738&fp-y=0.1309&fp-z=2.9176&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1026&mark-y=241&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNjUmaD05NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="「保存」を選択" />
+</div>
+
+<div><h3>4. 「長期休みスケジュール」を選択。</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/67c76f72-2da0-496a-a578-9a26d66ac584/9026317f-0086-4723-87a1-daaedb81dcc0.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0190&fp-y=0.1293&fp-z=2.8567&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=9&mark-y=225&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTImaD0xMDgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="「長期休みスケジュール」を選択。" />
+</div>
+
+<div><h3>5. フィルターを選択</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/5f01ffc6-85d1-4c2a-9e14-32e13f7b291c/cceed9f6-fb9e-497c-bfe5-b8849c054da8.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1115&mark-y=83&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0zMSZoPTMyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="フィルターを選択" />
+</div>
+
+<div><h3>6. イベントID①及び②にて、該当のイベントを選択</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/bc3b41ac-fc10-4a80-b5c8-a9669a60d078/9cf30e42-0f80-47b6-9a85-a6a9ec4351d8.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=961&mark-y=264&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0yMzYmaD00NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="イベントID①及び②にて、該当のイベントを選択" />
+</div>
+
+<div><h3>7. 例：「8/10(土)-8/11(日)【合宿】えすこーとスポーツ合宿 @信州白樺高原」を選択</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/3cc318b7-0aa3-4750-9941-7381a002b6d6/f03d4b0b-14fb-4687-b1cd-58846c2da85d.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.8203&fp-y=0.5370&fp-z=2.8398&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=544&mark-y=321&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTImaD0xMTImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="例：「8/10(土)-8/11(日)【合宿】えすこーとスポーツ合宿 @信州白樺高原」を選択" />
+</div>
+
+<div><h3>8. 実行</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/335e7e55-34ae-4ee3-9a10-1c6638f7338f/813bdfc2-083a-47a3-b230-9c6d9adbda51.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1079&mark-y=708&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0xMTgmaD00NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="実行" />
+</div>
+
+<div><h3>9. イベントID②も忘れずに。</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/335b76a5-3514-4fa9-887c-70af33568bcf/2e9fd547-e366-4e7a-affe-d81f70caefec.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=961&mark-y=475&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0yMzYmaD00NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="イベントID②も忘れずに。" />
+</div>
+
+<div><h3>10. うまくフィルタリングされています。ここで、CSVエクスポートを押します。</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/5300b1a5-ad25-4a3c-a9ad-519c2669211c/cb4e0dd4-a804-4d10-931d-9841342a3998.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1017&mark-y=83&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz0zMyZoPTMzJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="うまくフィルタリングされています。ここで、CSVエクスポートを押します。" />
+</div>
+
+<div><h3>11. OKを押します。30秒ほど待つと、CSVがダウンロードされます。
+このCSV、名前や校舎だけでなく、アレルギーや保護者の連絡先、生徒の生年月日も記載されております。</h3>
+<img src="https://images.tango.us/workflows/ea82229e-6bb6-4fe6-b440-d685e507e6e8/steps/f6c2797d-f697-4c40-b5a5-4a1591a82a9b/5d86d891-4d89-4e06-9ef2-57ba16d2f33f.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=703&mark-y=449&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTMlMkNGRjc0NDImdz01NyZoPTM2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="OKを押します。30秒ほど待つと、CSVがダウンロードされます。
+このCSV、名前や校舎だけでなく、アレルギーや保護者の連絡先、生徒の生年月日も記載されております。" />
+</div>
+
+<br/>
+<hr/>
+<div>
+<span>Created with </span><a href="https://tango.ai?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank' style='color: #256EFF'>Tango.ai
+    </a>
+</div>''add this and this ''<h1><a href="https://app.tango.us/app/workflow/5765e484-3b08-4c32-ae50-d734f04068b4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>長期休みフォームの一斉送信方法
+（生徒基本情報管理アプリ）</a></h1>
+<div><b>Creation Date:</b> Nov 01, 2024</div>
+<div><b>Created By:</b> システム開発 えすこーと</div>
+<div><a href="https://app.tango.us/app/workflow/5765e484-3b08-4c32-ae50-d734f04068b4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>View most recent version on Tango.ai</a></div>
+<div style="height: 24px">&#8203;</div>
+<hr />
+<div style="height: 24px">&#8203;</div>
+
+
+<div><h2><a href="https://www.appsheet.com/start/ee0f2998-9fc1-4945-80e3-83e45dabaab4?platform=desktop#vss=H4sIAAAAAAAAA6tWKstMLQ8uSUzOVrKKrkbwvFMrlayUqmOUQioLUmOUrGKUnPPzSoryc2KUdGKU_BJzIYJPl058vqXlyY6GF8uWxyjVKtXG6sDMKEktVrKqJt0IK8pdoaOUmZKaV5KZlplaBDIPpBtoDlQvUBqkEyiArE-pVkcpt7QkMSknFex4oL7aWqBYWn5yaXFqShjQSWQ6pdgzz7WiIDEvxTc_BWhsWmJOcWotAGBRElR5AQAA&view=%E5%A5%91%E7%B4%84%E4%B8%80%E8%A6%A7&appName=%E3%80%90%E7%8F%BE%E8%A1%8C%E3%80%91%E7%94%9F%E5%BE%92%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E7%AE%A1%E7%90%86ver52-643033999"># AppSheet</a></h2></div>
+
+<div><h3>1. 生徒基本情報管理アプリにて、 「生徒一覧」を選択</h3>
+<img src="https://images.tango.us/workflows/5765e484-3b08-4c32-ae50-d734f04068b4/steps/4d3174b0-aff1-4ba1-b8da-ab64c9dd4eb5/673cd1bb-b35f-4a0a-a52f-745fc84ebcc9.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.0238&fp-y=0.0949&fp-z=2.7902&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=11&mark-y=148&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMzcmaD0xMzImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="生徒基本情報管理アプリにて、 「生徒一覧」を選択" />
+</div>
+
+<div><h3>2. Click on アイテムを選択</h3>
+<img src="https://images.tango.us/workflows/5765e484-3b08-4c32-ae50-d734f04068b4/steps/1477a80d-facc-4528-8c6f-f9000b70f178/77c1b59a-29dc-4ee3-b556-bbf44167964d.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9540&fp-y=0.0973&fp-z=2.8681&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=985&mark-y=170&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTMmaD0xMTMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="Click on アイテムを選択" />
+</div>
+
+<div><h3>3. 該当の生徒を選択して、「2024冬休みフォーム送信」をクリック。
+該当の生徒を選択する際、Shiftボタンを使用すれば、一括選択ができます。
+また、この時、保護者のメアドが入っていない生徒を選択すると、ボタンが隠れてしまいますので、保護者のメアドが入っていない場合は、保護者のメアドを追加してください。</h3>
+<img src="https://images.tango.us/workflows/5765e484-3b08-4c32-ae50-d734f04068b4/steps/969fdad2-8b10-4560-99b7-ae5a1fec0684/53837b56-e7ad-4bd3-a630-d0f93e55cf65.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="該当の生徒を選択して、「2024冬休みフォーム送信」をクリック。
+該当の生徒を選択する際、Shiftボタンを使用すれば、一括選択ができます。
+また、この時、保護者のメアドが入っていない生徒を選択すると、ボタンが隠れてしまいますので、保護者のメアドが入っていない場合は、保護者のメアドを追加してください。" />
+</div>
+
+<div><h3>4. 確認して、クリック。右上に数字が表示されるので、この数字が０になったら、全て送付されたということです。
+ご自分のメールアドレスにもメールが送付されますので、ご確認下さい。</h3>
+<img src="https://images.tango.us/workflows/5765e484-3b08-4c32-ae50-d734f04068b4/steps/fa2d60e9-a1d5-4b7e-a990-48009f51869c/5183f961-ac01-4c83-af0c-11580972d613.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5778&fp-y=0.5821&fp-z=2.2771&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=410&mark-y=342&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zODAmaD0xMjYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="確認して、クリック。右上に数字が表示されるので、この数字が０になったら、全て送付されたということです。
+ご自分のメールアドレスにもメールが送付されますので、ご確認下さい。" />
+</div>
+
+<br/>
+<hr/>
+<div>
+<span>Created with </span><a href="https://tango.ai?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank' style='color: #256EFF'>Tango.ai
+    </a>
+</div>
