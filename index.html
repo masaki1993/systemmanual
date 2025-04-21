@@ -11,6 +11,7 @@
             --accent: #e74c3c;
             --light: #ecf0f1;
             --dark: #34495e;
+            --menu-width: 250px;
         }
         * {
             box-sizing: border-box;
@@ -21,11 +22,19 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
             background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
+        
+        /* メイン部分のスタイル - デスクトップ（常に左側にメニュー表示） */
+        .content-container {
+            margin-left: var(--menu-width);
+            padding: 1rem;
+            max-width: 1200px;
+            transition: margin-left 0.3s ease;
+        }
+        
         header {
             background-color: var(--primary);
             color: white;
@@ -107,78 +116,19 @@
             margin-left: 1rem;
         }
 
-        /* ハンバーガーメニュー スタイル */
-        .nav-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            width: 50px;
-            height: 50px;
-            background: var(--accent);
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .nav-toggle:hover {
-            transform: scale(1.1);
-        }
-
-        .nav-toggle span, 
-        .nav-toggle span:before, 
-        .nav-toggle span:after {
-            content: '';
-            display: block;
-            width: 24px;
-            height: 3px;
-            background: white;
-            position: absolute;
-            transition: all 0.3s ease;
-        }
-
-        .nav-toggle span:before {
-            top: -8px;
-        }
-
-        .nav-toggle span:after {
-            bottom: -8px;
-        }
-
-        .nav-toggle.active span {
-            background: transparent;
-        }
-
-        .nav-toggle.active span:before {
-            transform: rotate(45deg);
-            top: 0;
-        }
-
-        .nav-toggle.active span:after {
-            transform: rotate(-45deg);
-            bottom: 0;
-        }
-
+        /* ナビゲーションメニュー - デスクトップ用（常に表示） */
         .nav-menu {
             position: fixed;
             top: 0;
-            right: -300px;
-            width: 300px;
+            left: 0;
+            width: var(--menu-width);
             height: 100vh;
             background: var(--secondary);
             z-index: 999;
-            padding: 70px 20px 20px;
+            padding: 20px;
             overflow-y: auto;
-            transition: right 0.3s ease;
-            box-shadow: -5px 0 15px rgba(0,0,0,0.3);
-        }
-
-        .nav-menu.active {
-            right: 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
         }
 
         .nav-menu ul {
@@ -232,7 +182,64 @@
             border-left: 3px solid var(--accent);
         }
 
+        /* ハンバーガーメニュー スタイル - モバイル用 */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-toggle span, 
+        .nav-toggle span:before, 
+        .nav-toggle span:after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: white;
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle span:before {
+            top: -8px;
+        }
+
+        .nav-toggle span:after {
+            bottom: -8px;
+        }
+
+        .nav-toggle.active span {
+            background: transparent;
+        }
+
+        .nav-toggle.active span:before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        .nav-toggle.active span:after {
+            transform: rotate(-45deg);
+            bottom: 0;
+        }
+
         .nav-overlay {
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -240,7 +247,6 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
             z-index: 998;
-            display: none;
         }
 
         .nav-overlay.active {
@@ -276,28 +282,86 @@
         .scroll-btn:hover {
             background: var(--dark);
         }
+        
+        /* AIチャットボタン */
+        .ai-chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 90px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 9999;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .ai-chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+            text-decoration: none;
+            color: white;
+        }
 
+        /* レスポンシブ対応 - モバイル向け */
         @media (max-width: 768px) {
+            body {
+                width: 100vw;
+                overflow-x: hidden;
+            }
+            
+            .content-container {
+                margin-left: 0;
+                padding: 0.5rem;
+                width: 100%;
+            }
+            
             h1 { font-size: 1.8rem; }
             h2 { font-size: 1.5rem; }
             h3 { font-size: 1.2rem; }
+            
             .app-links {
                 grid-template-columns: 1fr;
             }
+            
+            /* モバイル用ナビゲーション */
+            .nav-toggle {
+                display: flex;
+            }
+            
             .nav-menu {
-                width: 250px;
-                right: -250px;
+                transform: translateX(-100%);
+            }
+            
+            .nav-menu.active {
+                transform: translateX(0);
+            }
+            
+            /* モバイルでボタンの位置調整 */
+            .ai-chat-button {
+                bottom: 80px;
+                right: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- ハンバーガーメニュートグル -->
+    <!-- ハンバーガーメニュートグル - モバイルのみ表示 -->
     <div class="nav-toggle">
         <span></span>
     </div>
 
-    <!-- ナビゲーションメニュー -->
+    <!-- ナビゲーションメニュー - デスクトップでは常に表示 -->
     <nav class="nav-menu">
         <h3>目次</h3>
         <ul>
@@ -324,283 +388,288 @@
         </ul>
     </nav>
 
-    <!-- オーバーレイ背景 -->
+    <!-- オーバーレイ背景 - モバイルのみ表示 -->
     <div class="nav-overlay"></div>
+    
+    <!-- AIチャットボタン -->
+    <a href="https://notebooklm.google.com/notebook/fa138470-5e10-419f-b18f-731148e1356e?_gl=1*1k3k5y3*_ga*MTE0OTQ1MzgwNC4xNzQxNzIzODI4*_ga_W0LDH41ZCB*MTc0NTIxNjk4My43LjEuMTc0NTIxNzg3MC42MC4wLjA." target="_blank" class="ai-chat-button">AIチャット</a>
 
-    <!-- 上下移動ボタン -->
-    <div class="scroll-buttons">
-        <div class="scroll-btn scroll-top">↑</div>
-        <div class="scroll-btn scroll-bottom">↓</div>
-    </div>
-
-    <header>
-        <h1>えすこーと管理システム</h1>
-        <p>操作マニュアル</p>
-    </header>
-
-    <div class="toc card">
-        <h2>目次</h2>
-        <ul>
-            <li><a href="#intro">1. はじめに</a></li>
-            <li><a href="#system-flow">2. システム全体フロー</a></li>
-            <li><a href="#basic-ops">3. アプリ構成と基本操作</a></li>
-            <li><a href="#detailed">4. 各アプリの詳細説明</a>
-                <ul>
-                    <li><a href="#crm">4.1. 問い合わせアプリ (CRM)</a></li>
-                    <li><a href="#student-info">4.2. 生徒基本情報管理アプリ</a></li>
-                    <li><a href="#schedule">4.3. スケジュール・シフト管理</a></li>
-                    <li><a href="#billing">4.4. 請求管理</a></li>
-                    <li><a href="#salary">4.5. 給与管理</a></li>
-                    <li><a href="#checkin">4.6. 入退室アプリ</a></li>
-                    <li><a href="#contact">4.7. 連絡事項フォーム</a></li>
-                    <li><a href="#vacation">4.8. 長期休みアプリ</a></li>
-                </ul>
-            </li>
-            <li><a href="#onboarding">5. 初出勤前手続き</a></li>
-            <li><a href="#tips">6. 全体的な注意点・Tips</a></li>
-            <li><a href="#links">7. アプリリンク集</a></li>
-        </ul>
-    </div>
-
-    <section id="intro" class="card">
-        <h2>1. はじめに</h2>
-        <p>本システムは、学習塾・学童保育施設の運営を円滑化するためのAppSheetベースのアプリケーション群です。問い合わせ管理から生徒・保護者情報、スケジュール、請求、給与計算まで、多岐にわたる業務を一元管理し、効率化を図ることを目的としています。</p>
-        <p>本マニュアルは、システムの全機能について詳細な操作方法、ワークフロー、注意点を解説します。システムを正確かつ効果的に活用するためにご参照ください。</p>
-    </section>
-
-    <section id="system-flow" class="card">
-        <h2>2. システム全体フロー</h2>
-        <p>以下にシステム全体の基本的な流れを示します。各ステップの詳細は後述のアプリ説明をご参照ください。</p>
-
-        <h3>問い合わせ受付 〜 データ生成</h3>
-        <div class="workflow">
-            <ol>
-                <li><strong>問い合わせアプリ:</strong> お客様からの問い合わせを受領し、営業フォローアップを実施。</li>
-                <li>契約書・利用調査書を送付し、保護者に入力を依頼。</li>
-                <li><strong>（外部連携）Jaccsオンライン口座登録:</strong> 保護者が口座登録フォームから情報を入力。登録完了後、指定メールアドレスに完了通知が届く。</li>
-                <li><strong>問い合わせアプリ:</strong> 契約情報に基づき、生徒・保護者データを生成（「保護者会員データ追加」ボタン）。</li>
-            </ol>
+    <!-- コンテンツ部分 - 全てのコンテンツをラップ -->
+    <div class="content-container">
+        <!-- 上下移動ボタン -->
+        <div class="scroll-buttons">
+            <div class="scroll-btn scroll-top">↑</div>
+            <div class="scroll-btn scroll-bottom">↓</div>
         </div>
 
-        <h3>生徒・スタッフ情報管理</h3>
-        <div class="workflow">
-            <ol>
-                <li><strong>生徒基本情報管理アプリ:</strong>
-                    <ul>
-                        <li>問い合わせアプリから移行されたデータを基に、詳細情報（契約書、調査書内容）を追加入力・修正。</li>
-                        <li>Jaccsからの通知メールに基づき、銀行口座情報を登録。</li>
-                        <li>「会員契約」情報（利用コース、期間等）を登録（→請求明細作成の元データ）。</li>
-                        <li>「生徒スケジュール」情報（利用曜日・時間、習い事、送迎等）を登録（→シフトデータ生成、請求計算の元データ）。</li>
-                        <li>（スタッフ情報）「デフォルト勤務」情報（基本シフト、役割、担当習い事等）を登録（→シフトデータ生成の元データ）。</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
+        <header>
+            <h1>えすこーと管理システム</h1>
+            <p>操作マニュアル</p>
+        </header>
 
-        <h3>シフト作成・管理</h3>
-        <div class="workflow">
-            <ol>
-                <li><strong>生徒基本情報管理アプリ（シフトデータ生成機能）:</strong>
-                    <ul>
-                        <li>登録された「生徒スケジュール」「デフォルト勤務」に基づき、指定期間・シフト種類の日次シフトデータ（生徒予定実績）を生成。</li>
-                    </ul>
-                </li>
-                <li><strong>生徒基本情報管理アプリ（生徒予定実績/シフト表）:</strong>
-                    <ul>
-                        <li>生成された日次シフトにスタッフを割り当て、欠席・振替等を反映。</li>
-                        <li>内容を確定後、「シフトデータ更新」ボタンでスプレッドシート等に反映。</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-
-        <h3>請求プロセス</h3>
-        <div class="workflow">
-            <ol>
-                <li><strong>生徒基本情報管理アプリ（請求関連機能）:</strong>
-                    <ul>
-                        <li>請求カレンダーでスケジュールを確認。</li>
-                        <li>「請求明細データ生成」機能で、会員契約情報・生徒予定実績・長期休み情報に基づき、月次の請求明細を作成。</li>
-                        <li>生成された「請求明細」を確認・修正。</li>
-                        <li>締切日までに「請求確定」を実行。</li>
-                        <li>「PDF・D-Collect生成」を実行し、内容を最終確認。</li>
-                        <li>「メール送信」機能で保護者に請求書を送付。</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-
-        <h3>当日運用</h3>
-        <div class="workflow">
-            <ol>
-                <li><strong>入退室アプリ:</strong> 生徒・スタッフが登所・降所時に打刻。</li>
-                <li><strong>連絡事項フォーム（外部）:</strong> 保護者からの欠席連絡、時間変更等をGoogleフォーム等で受け付け、生徒予定実績に手動で反映。</li>
-            </ol>
-        </div>
-
-        <h3>給与計算プロセス</h3>
-        <div class="workflow">
-            <ol>
-                <li><strong>給与スタッフアプリ:</strong> スタッフが日々の勤務実績（時間、業務内容、交通費）をセルフ入力。</li>
-                <li><strong>給与管理アプリ（承認機能）:</strong> 管理者が入力された勤務実績を毎月3〜4日までに承認。</li>
-                <li><strong>給与管理アプリ（給与明細データ生成）:</strong> 承認された実績と登録済みの時給・交通費に基づき、給与明細を生成。</li>
-                <li><strong>給与管理アプリ（給与明細/出力）:</strong> 生成された明細を確認し、PDF・CSVデータを出力して支払い処理を行う。</li>
-            </ol>
-        </div>
-
-        <!-- その他のフローも同様に追加 -->
-    </section>
-
-    <section id="basic-ops" class="card">
-        <h2>3. アプリ構成と基本操作</h2>
-        
-        <h3>3.1. 主要アプリ一覧</h3>
-        <div class="app-links">
-            <div class="app-link">
-                <h4>問い合わせアプリ (CRM)</h4>
-                <p>新規顧客管理、入会プロセス管理</p>
-                <a href="https://www.appsheet.com/start/e5817f6d-c920-4b7a-8dac-9a86a490dd14" target="_blank">アプリを開く</a>
-            </div>
-            <div class="app-link">
-                <h4>生徒基本情報管理アプリ</h4>
-                <p>生徒・保護者の詳細情報、契約、スケジュール、請求関連機能</p>
-                <a href="https://www.appsheet.com/start/ee0f2998-9fc1-4945-80e3-83e45dabaab4" target="_blank">アプリを開く</a>
-            </div>
-            <div class="app-link">
-                <h4>給与管理アプリ (管理者用)</h4>
-                <p>スタッフ情報、時給・経路登録、勤怠承認、給与明細生成・管理</p>
-                <a href="https://www.appsheet.com/start/a0792284-084a-4d77-b2b2-99678f66d797" target="_blank">アプリを開く</a>
-            </div>
-            <div class="app-link">
-                <h4>入退室アプリ (打刻用)</h4>
-                <p>生徒・スタッフの日々の入退室記録用</p>
-                <a href="https://www.appsheet.com/start/726ab5d8-0097-48c3-bac1-1a8e48ef3c72" target="_blank">アプリを開く</a>
-            </div>
-            <div class="app-link">
-                <h4>給与スタッフアプリ (スタッフ用)</h4>
-                <p>スタッフが自身の勤怠・交通費を入力するためのアプリ</p>
-                <a href="https://www.appsheet.com/start/31728c9b-9767-4904-882f-3067f3f08723" target="_blank">アプリを開く</a>
-            </div>
-            <div class="app-link">
-                <h4>春休みアプリ (例: 長期休みアプリ)</h4>
-                <p>長期休暇期間の利用希望受付用</p>
-                <a href="https://www.appsheet.com/start/088e3694-898e-4bc4-833b-e2809179798e" target="_blank">アプリを開く</a>
-            </div>
-            <div class="app-link">
-                <h4>Jaccsオンライン口座登録 (外部連携)</h4>
-                <p>保護者による口座情報登録用</p>
-                <a href="https://jaccs.kfront.jp/jaccsroot/Jaccs_0314_Entry/CustomerInput" target="_blank">サイトを開く</a>
-            </div>
-        </div>
-
-        <h3>3.2. 基本操作</h3>
-        <ul>
-            <li><strong>ナビゲーション:</strong>
-                <ul>
-                    <li>関連データへのリンク（例：「生徒〇〇さんの契約情報」）をクリックして移動します。</li>
-                    <li>AppSheetの仕様上、ブラウザのタブを複数開いて異なる画面を同時に表示することはできません。</li>
-                </ul>
-            </li>
-            <li><strong>データ入力・編集:</strong>
-                <ul>
-                    <li>各画面にある 「編集」ボタンや 「追加」ボタン（＋マーク） をクリックして操作します。一覧で「鉛筆マーク」を押すと、一括編集ができます。</li>
-                </ul>
-            </li>
-            <li><strong>検索・フィルタリング:</strong>
-                <ul>
-                    <li>リスト表示画面（例：生徒一覧）の上部にある検索バーでキーワード検索ができます。</li>
-                    <li>フィルターアイコン（漏斗のようなマーク）で特定の条件（例：ステータスが「面談設定済み」）でデータを絞り込めます。</li>
-                </ul>
-            </li>
-            <li><strong>データ同期:</strong>
-                <ul>
-                    <li>AppSheetは基本的に自動でバックエンドのスプレッドシートと同期しますが、反映までにタイムラグが発生することがあります。</li>
-                    <li>データ生成を行った後や、すぐに反映を確認したい場合は、手動で同期ボタン（円形の矢印マーク）を押してください。</li>
-                    <li><strong style="color: red;">円形マークにびっくりマークがついていたり、数字が減らない場合は、一旦手を止めて、マークがなくなるまで待ってください。どうしてもなくならない場合は、真崎裕次郎（masakiyujiro@sene-g.com）までご連絡ください。</strong></li>
-                </ul>
-            </li>
-            <li><strong>アカウント・権限:</strong>
-                <ul>
-                    <li>システムへのログインには、Googleアカウントなど指定されたアカウントが必要です。</li>
-                    <li>役職や担当に応じてアクセスできるデータ範囲が異なります。</li>
-                </ul>
-            </li>
-        </ul>
-        
-    </section>
-
-    <section id="detailed" class="card">
-        <h2>4. 各アプリの詳細説明</h2>
-        
-        <section id="crm" class="card">
-            <h3>4.1. 問い合わせアプリ (CRM)</h3>
-            <p><strong>目的:</strong> 入会前の見込み顧客情報を一元管理し、ステータスを追跡することで、スムーズな入会プロセスを実現します。</p>
-            
-            <h4>主な機能・データ項目:</h4>
+        <div class="toc card">
+            <h2>目次</h2>
             <ul>
-                <li><strong>問い合わせ情報:</strong> 問い合わせ者（保護者）氏名、連絡先（電話、メール）、生徒氏名、学年、問い合わせ経緯などが問い合わせフォームの内容に基づいて作成されます。</li>
-                <li><strong>ステータス管理:</strong> 「新規」「メール送信済み」「面談設定済み」「決定（入金待ち）」「決定（入金済み）」「見送り」などのステータスで進捗を管理。フィルター機能で特定のステータスのリストを表示可能。</li>
-                <li><strong>対応履歴記録:</strong> 面談日時、担当者、面談内容のメモなどを記録。</li>
-                <li><strong style="color: red;">契約書・健康調査書送信:</strong> アプリ内から指定のメールテンプレートを選択し、保護者へオンラインフォームのリンクを送信可能（テンプレート編集可能）。利用調査書は、契約書が送付されてから、生徒基本情報管理アプリにて送付。</li>
-                <li><strong>データ生成（生徒基本情報管理へ）:</strong> 契約が成立した場合、「保護者会員データ追加」ボタンを押すことで、入力されている情報を元に「生徒基本情報管理アプリ」に生徒データと保護者データが自動生成されます。</li>
+                <li><a href="#intro">1. はじめに</a></li>
+                <li><a href="#system-flow">2. システム全体フロー</a></li>
+                <li><a href="#basic-ops">3. アプリ構成と基本操作</a></li>
+                <li><a href="#detailed">4. 各アプリの詳細説明</a>
+                    <ul>
+                        <li><a href="#crm">4.1. 問い合わせアプリ (CRM)</a></li>
+                        <li><a href="#student-info">4.2. 生徒基本情報管理アプリ</a></li>
+                        <li><a href="#schedule">4.3. スケジュール・シフト管理</a></li>
+                        <li><a href="#billing">4.4. 請求管理</a></li>
+                        <li><a href="#salary">4.5. 給与管理</a></li>
+                        <li><a href="#checkin">4.6. 入退室アプリ</a></li>
+                        <li><a href="#contact">4.7. 連絡事項フォーム</a></li>
+                        <li><a href="#vacation">4.8. 長期休みアプリ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#onboarding">5. 初出勤前手続き</a></li>
+                <li><a href="#tips">6. 全体的な注意点・Tips</a></li>
+                <li><a href="#links">7. アプリリンク集</a></li>
             </ul>
-            
-            <h4>ワークフロー:</h4>
+        </div>
+
+        <section id="intro" class="card">
+            <h2>1. はじめに</h2>
+            <p>本システムは、学習塾・学童保育施設の運営を円滑化するためのAppSheetベースのアプリケーション群です。問い合わせ管理から生徒・保護者情報、スケジュール、請求、給与計算まで、多岐にわたる業務を一元管理し、効率化を図ることを目的としています。</p>
+            <p>本マニュアルは、システムの全機能について詳細な操作方法、ワークフロー、注意点を解説します。システムを正確かつ効果的に活用するためにご参照ください。</p>
+        </section>
+
+        <section id="system-flow" class="card">
+            <h2>2. システム全体フロー</h2>
+            <p>以下にシステム全体の基本的な流れを示します。各ステップの詳細は後述のアプリ説明をご参照ください。</p>
+
+            <h3>問い合わせ受付 〜 データ生成</h3>
             <div class="workflow">
                 <ol>
-                    <li>資料送付や電話連絡を行ったらステータスを更新。</li>
-                    <li>面談日時が決まったら記録し、ステータスを「面談設定済み」に更新。</li>
-                    <li>面談実施後、結果（入会見込み、保留、見送りなど）を記録し、ステータスを更新。</li>
-                    <li>入会が決まったら、契約書・健康調査書及びジャックス口座登録リンクを送信。保護者による入力・提出を待つ（操作方法は以下）。</li>
-                    <li>保護者の入力完了後（および口座登録完了後）、「保護者会員データ追加」ボタンを押し、生徒基本情報管理アプリにデータを生成。ステータスを「契約済み」に更新。→生徒基本情報管理アプリにて、利用調査書を送付。</li>
+                    <li><strong>問い合わせアプリ:</strong> お客様からの問い合わせを受領し、営業フォローアップを実施。</li>
+                    <li>契約書・利用調査書を送付し、保護者に入力を依頼。</li>
+                    <li><strong>（外部連携）Jaccsオンライン口座登録:</strong> 保護者が口座登録フォームから情報を入力。登録完了後、指定メールアドレスに完了通知が届く。</li>
+                    <li><strong>問い合わせアプリ:</strong> 契約情報に基づき、生徒・保護者データを生成（「保護者会員データ追加」ボタン）。</li>
                 </ol>
             </div>
-            
-            <div class="note">
-                <h4>注意点:</h4>
-                <ul>
-                    <li><strong>データ生成のタイミング:</strong> 「保護者会員データ追加」は、保護者が契約書・利用調査書・口座登録を完了した後に実行してください。</li>
-                    <li><strong>ステータス更新:</strong> 対応状況に応じて、こまめにステータスを更新することで、対応漏れや重複を防ぎます。</li>
-                    <li><strong>メールテンプレート:</strong> 送信するメールテンプレートの内容は定期的に確認・更新してください。</li>
-                </ul>
+
+            <h3>生徒・スタッフ情報管理</h3>
+            <div class="workflow">
+                <ol>
+                    <li><strong>生徒基本情報管理アプリ:</strong>
+                        <ul>
+                            <li>問い合わせアプリから移行されたデータを基に、詳細情報（契約書、調査書内容）を追加入力・修正。</li>
+                            <li>Jaccsからの通知メールに基づき、銀行口座情報を登録。</li>
+                            <li>「会員契約」情報（利用コース、期間等）を登録（→請求明細作成の元データ）。</li>
+                            <li>「生徒スケジュール」情報（利用曜日・時間、習い事、送迎等）を登録（→シフトデータ生成、請求計算の元データ）。</li>
+                            <li>（スタッフ情報）「デフォルト勤務」情報（基本シフト、役割、担当習い事等）を登録（→シフトデータ生成の元データ）。</li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
 
-<h1><a href="https://app.tango.us/app/workflow/2259d177-3584-4ab8-840e-80df7ba0b1c4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>問い合わせアプリで契約書フォームとジャックスオンラインのメールを作成する方法</a></h1>
+            <h3>シフト作成・管理</h3>
+            <div class="workflow">
+                <ol>
+                    <li><strong>生徒基本情報管理アプリ（シフトデータ生成機能）:</strong>
+                        <ul>
+                            <li>登録された「生徒スケジュール」「デフォルト勤務」に基づき、指定期間・シフト種類の日次シフトデータ（生徒予定実績）を生成。</li>
+                        </ul>
+                    </li>
+                    <li><strong>生徒基本情報管理アプリ（生徒予定実績/シフト表）:</strong>
+                        <ul>
+                            <li>生成された日次シフトにスタッフを割り当て、欠席・振替等を反映。</li>
+                            <li>内容を確定後、「シフトデータ更新」ボタンでスプレッドシート等に反映。</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
 
-<div><a href="https://app.tango.us/app/workflow/2259d177-3584-4ab8-840e-80df7ba0b1c4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'></a></div>
-<div style="height: 24px">&#8203;</div>
-<hr />
-<div style="height: 24px">&#8203;</div>
+            <h3>請求プロセス</h3>
+            <div class="workflow">
+                <ol>
+                    <li><strong>生徒基本情報管理アプリ（請求関連機能）:</strong>
+                        <ul>
+                            <li>請求カレンダーでスケジュールを確認。</li>
+                            <li>「請求明細データ生成」機能で、会員契約情報・生徒予定実績・長期休み情報に基づき、月次の請求明細を作成。</li>
+                            <li>生成された「請求明細」を確認・修正。</li>
+                            <li>締切日までに「請求確定」を実行。</li>
+                            <li>「PDF・D-Collect生成」を実行し、内容を最終確認。</li>
+                            <li>「メール送信」機能で保護者に請求書を送付。</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>当日運用</h3>
+            <div class="workflow">
+                <ol>
+                    <li><strong>入退室アプリ:</strong> 生徒・スタッフが登所・降所時に打刻。</li>
+                    <li><strong>連絡事項フォーム（外部）:</strong> 保護者からの欠席連絡、時間変更等をGoogleフォーム等で受け付け、生徒予定実績に手動で反映。</li>
+                </ol>
+            </div>
+
+            <h3>給与計算プロセス</h3>
+            <div class="workflow">
+                <ol>
+                    <li><strong>給与スタッフアプリ:</strong> スタッフが日々の勤務実績（時間、業務内容、交通費）をセルフ入力。</li>
+                    <li><strong>給与管理アプリ（承認機能）:</strong> 管理者が入力された勤務実績を毎月3〜4日までに承認。</li>
+                    <li><strong>給与管理アプリ（給与明細データ生成）:</strong> 承認された実績と登録済みの時給・交通費に基づき、給与明細を生成。</li>
+                    <li><strong>給与管理アプリ（給与明細/出力）:</strong> 生成された明細を確認し、PDF・CSVデータを出力して支払い処理を行う。</li>
+                </ol>
+            </div>
+
+            <!-- その他のフローも同様に追加 -->
+        </section>
+
+        <section id="basic-ops" class="card">
+            <h2>3. アプリ構成と基本操作</h2>
+            
+            <h3>3.1. 主要アプリ一覧</h3>
+            <div class="app-links">
+                <div class="app-link">
+                    <h4>問い合わせアプリ (CRM)</h4>
+                    <p>新規顧客管理、入会プロセス管理</p>
+                    <a href="https://www.appsheet.com/start/e5817f6d-c920-4b7a-8dac-9a86a490dd14" target="_blank">アプリを開く</a>
+                </div>
+                <div class="app-link">
+                    <h4>生徒基本情報管理アプリ</h4>
+                    <p>生徒・保護者の詳細情報、契約、スケジュール、請求関連機能</p>
+                    <a href="https://www.appsheet.com/start/ee0f2998-9fc1-4945-80e3-83e45dabaab4" target="_blank">アプリを開く</a>
+                </div>
+                <div class="app-link">
+                    <h4>給与管理アプリ (管理者用)</h4>
+                    <p>スタッフ情報、時給・経路登録、勤怠承認、給与明細生成・管理</p>
+                    <a href="https://www.appsheet.com/start/a0792284-084a-4d77-b2b2-99678f66d797" target="_blank">アプリを開く</a>
+                </div>
+                <div class="app-link">
+                    <h4>入退室アプリ (打刻用)</h4>
+                    <p>生徒・スタッフの日々の入退室記録用</p>
+                    <a href="https://www.appsheet.com/start/726ab5d8-0097-48c3-bac1-1a8e48ef3c72" target="_blank">アプリを開く</a>
+                </div>
+                <div class="app-link">
+                    <h4>給与スタッフアプリ (スタッフ用)</h4>
+                    <p>スタッフが自身の勤怠・交通費を入力するためのアプリ</p>
+                    <a href="https://www.appsheet.com/start/31728c9b-9767-4904-882f-3067f3f08723" target="_blank">アプリを開く</a>
+                </div>
+                <div class="app-link">
+                    <h4>春休みアプリ (例: 長期休みアプリ)</h4>
+                    <p>長期休暇期間の利用希望受付用</p>
+                    <a href="https://www.appsheet.com/start/088e3694-898e-4bc4-833b-e2809179798e" target="_blank">アプリを開く</a>
+                </div>
+                <div class="app-link">
+                    <h4>Jaccsオンライン口座登録 (外部連携)</h4>
+                    <p>保護者による口座情報登録用</p>
+                    <a href="https://jaccs.kfront.jp/jaccsroot/Jaccs_0314_Entry/CustomerInput" target="_blank">サイトを開く</a>
+                </div>
+            </div>
+
+            <h3>3.2. 基本操作</h3>
+            <ul>
+                <li><strong>ナビゲーション:</strong>
+                    <ul>
+                        <li>関連データへのリンク（例：「生徒〇〇さんの契約情報」）をクリックして移動します。</li>
+                        <li>AppSheetの仕様上、ブラウザのタブを複数開いて異なる画面を同時に表示することはできません。</li>
+                    </ul>
+                </li>
+                <li><strong>データ入力・編集:</strong>
+                    <ul>
+                        <li>各画面にある 「編集」ボタンや 「追加」ボタン（＋マーク） をクリックして操作します。一覧で「鉛筆マーク」を押すと、一括編集ができます。</li>
+                    </ul>
+                </li>
+                <li><strong>検索・フィルタリング:</strong>
+                    <ul>
+                        <li>リスト表示画面（例：生徒一覧）の上部にある検索バーでキーワード検索ができます。</li>
+                        <li>フィルターアイコン（漏斗のようなマーク）で特定の条件（例：ステータスが「面談設定済み」）でデータを絞り込めます。</li>
+                    </ul>
+                </li>
+                <li><strong>データ同期:</strong>
+                    <ul>
+                        <li>AppSheetは基本的に自動でバックエンドのスプレッドシートと同期しますが、反映までにタイムラグが発生することがあります。</li>
+                        <li>データ生成を行った後や、すぐに反映を確認したい場合は、手動で同期ボタン（円形の矢印マーク）を押してください。</li>
+                        <li><strong style="color: red;">円形マークにびっくりマークがついていたり、数字が減らない場合は、一旦手を止めて、マークがなくなるまで待ってください。どうしてもなくならない場合は、真崎裕次郎（masakiyujiro@sene-g.com）までご連絡ください。</strong></li>
+                    </ul>
+                </li>
+                <li><strong>アカウント・権限:</strong>
+                    <ul>
+                        <li>システムへのログインには、Googleアカウントなど指定されたアカウントが必要です。</li>
+                        <li>役職や担当に応じてアクセスできるデータ範囲が異なります。</li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section id="detailed" class="card">
+            <h2>4. 各アプリの詳細説明</h2>
+            
+            <section id="crm" class="card">
+                <h3>4.1. 問い合わせアプリ (CRM)</h3>
+                <p><strong>目的:</strong> 入会前の見込み顧客情報を一元管理し、ステータスを追跡することで、スムーズな入会プロセスを実現します。</p>
+                
+                <h4>主な機能・データ項目:</h4>
+                <ul>
+                    <li><strong>問い合わせ情報:</strong> 問い合わせ者（保護者）氏名、連絡先（電話、メール）、生徒氏名、学年、問い合わせ経緯などが問い合わせフォームの内容に基づいて作成されます。</li>
+                    <li><strong>ステータス管理:</strong> 「新規」「メール送信済み」「面談設定済み」「決定（入金待ち）」「決定（入金済み）」「見送り」などのステータスで進捗を管理。フィルター機能で特定のステータスのリストを表示可能。</li>
+                    <li><strong>対応履歴記録:</strong> 面談日時、担当者、面談内容のメモなどを記録。</li>
+                    <li><strong style="color: red;">契約書・健康調査書送信:</strong> アプリ内から指定のメールテンプレートを選択し、保護者へオンラインフォームのリンクを送信可能（テンプレート編集可能）。利用調査書は、契約書が送付されてから、生徒基本情報管理アプリにて送付。</li>
+                    <li><strong>データ生成（生徒基本情報管理へ）:</strong> 契約が成立した場合、「保護者会員データ追加」ボタンを押すことで、入力されている情報を元に「生徒基本情報管理アプリ」に生徒データと保護者データが自動生成されます。</li>
+                </ul>
+                
+                <h4>ワークフロー:</h4>
+                <div class="workflow">
+                    <ol>
+                        <li>資料送付や電話連絡を行ったらステータスを更新。</li>
+                        <li>面談日時が決まったら記録し、ステータスを「面談設定済み」に更新。</li>
+                        <li>面談実施後、結果（入会見込み、保留、見送りなど）を記録し、ステータスを更新。</li>
+                        <li>入会が決まったら、契約書・健康調査書及びジャックス口座登録リンクを送信。保護者による入力・提出を待つ（操作方法は以下）。</li>
+                        <li>保護者の入力完了後（および口座登録完了後）、「保護者会員データ追加」ボタンを押し、生徒基本情報管理アプリにデータを生成。ステータスを「契約済み」に更新。→生徒基本情報管理アプリにて、利用調査書を送付。</li>
+                    </ol>
+                </div>
+                
+                <div class="note">
+                    <h4>注意点:</h4>
+                    <ul>
+                        <li><strong>データ生成のタイミング:</strong> 「保護者会員データ追加」は、保護者が契約書・利用調査書・口座登録を完了した後に実行してください。</li>
+                        <li><strong>ステータス更新:</strong> 対応状況に応じて、こまめにステータスを更新することで、対応漏れや重複を防ぎます。</li>
+                        <li><strong>メールテンプレート:</strong> 送信するメールテンプレートの内容は定期的に確認・更新してください。</li>
+                    </ul>
+                </div>
+
+    <h1><a href="https://app.tango.us/app/workflow/2259d177-3584-4ab8-840e-80df7ba0b1c4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'>問い合わせアプリで契約書フォームとジャックスオンラインのメールを作成する方法</a></h1>
+
+    <div><a href="https://app.tango.us/app/workflow/2259d177-3584-4ab8-840e-80df7ba0b1c4?utm_source=magicCopy&utm_medium=magicCopy&utm_campaign=workflow%20export%20links" target='_blank'></a></div>
+    <div style="height: 24px">&#8203;</div>
+    <hr />
+    <div style="height: 24px">&#8203;</div>
 
 
-<div><h2><a href="https://www.appsheet.com/template/AppDef?appName=%E5%A5%91%E7%B4%84%E3%82%A2%E3%83%97%E3%83%AAv2-643033999&appId=e5817f6d-c920-4b7a-8dac-9a86a490dd14&quickStart=False#Behavior.Actions.%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%9B%9E%E7%AD%94%205.%E3%83%A1%E3%83%BC%E3%83%AB%E6%96%87%E4%BD%9C%E6%88%90%E3%81%AE%E5%9B%9E%E7%AD%94%205.%E3%83%A1%E3%83%BC%E3%83%AB%E6%96%87%E4%BD%9C%E6%88%90"># AppSheet</a></h2></div>
+    <div><h2><a href="https://www.appsheet.com/template/AppDef?appName=%E5%A5%91%E7%B4%84%E3%82%A2%E3%83%97%E3%83%AAv2-643033999&appId=e5817f6d-c920-4b7a-8dac-9a86a490dd14&quickStart=False#Behavior.Actions.%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%9B%9E%E7%AD%94%205.%E3%83%A1%E3%83%BC%E3%83%AB%E6%96%87%E4%BD%9C%E6%88%90%E3%81%AE%E5%9B%9E%E7%AD%94%205.%E3%83%A1%E3%83%BC%E3%83%AB%E6%96%87%E4%BD%9C%E6%88%90"># AppSheet</a></h2></div>
 
-<div><h3>1. 問い合わせアプリで、問い合わせリストを表示</h3>
+    <div><h3>1. 問い合わせアプリで、問い合わせリストを表示</h3>
 
-</div>
+    </div>
 
-<div><h3>2. 送信する親御さんを選択</h3>
+    <div><h3>2. 送信する親御さんを選択</h3>
 
-</div>
+    </div>
 
-<div><h3>3. メール文作成をクリック</h3>
-<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/d40a31ff-6138-41ec-9b52-a44d8faff950/01ada1b9-6e9a-4d87-b30f-dc20effd906a.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5882&fp-y=0.2301&fp-z=2.4933&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=508&mark-y=320&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xODQmaD0yMTYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="メール文作成をクリック" />
-</div>
+    <div><h3>3. メール文作成をクリック</h3>
+    <img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/d40a31ff-6138-41ec-9b52-a44d8faff950/01ada1b9-6e9a-4d87-b30f-dc20effd906a.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.5882&fp-y=0.2301&fp-z=2.4933&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=508&mark-y=320&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xODQmaD0yMTYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="メール文作成をクリック" />
+    </div>
 
-<div><h3>4. メールテンプレを選ぶ</h3>
-<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/5130d51a-934c-4754-b99b-63ce16939008/87d3f897-62ae-4fe2-b76c-562964be3033.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6840&fp-y=0.2688&fp-z=1.8736&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=110&mark-y=376&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NzkmaD0xMDMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="メールテンプレを選ぶ" />
-</div>
+    <div><h3>4. メールテンプレを選ぶ</h3>
+    <img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/5130d51a-934c-4754-b99b-63ce16939008/87d3f897-62ae-4fe2-b76c-562964be3033.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6840&fp-y=0.2688&fp-z=1.8736&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=110&mark-y=376&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NzkmaD0xMDMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="メールテンプレを選ぶ" />
+    </div>
 
-<div><h3>5. 文章内で修正する部分があれば、修正する</h3>
-<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/5b7f3b8c-93cb-45ef-82e2-ba1621bb3f24/11eb2797-6e11-4974-970e-203d534ce451.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6591&fp-y=0.6839&fp-z=1.4625&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=269&mark-y=447&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NjQmaD0zNTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="文章内で修正する部分があれば、修正する" />
-</div>
+    <div><h3>5. 文章内で修正する部分があれば、修正する</h3>
+    <img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/5b7f3b8c-93cb-45ef-82e2-ba1621bb3f24/11eb2797-6e11-4974-970e-203d534ce451.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.6591&fp-y=0.6839&fp-z=1.4625&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=269&mark-y=447&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NjQmaD0zNTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="文章内で修正する部分があれば、修正する" />
+    </div>
 
-<div><h3>6. 保存を押したら、メールが送信されます。ご不安であれば、文面をご自分のメールにコピペしてご使用いただいても構いません。</h3>
-<img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/ede45794-5fd0-4e13-a98a-9a81cc6b2d00/bb30bbb6-c7ce-4005-91f7-ed28d4be67a4.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9632&fp-y=0.0306&fp-z=2.9063&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=975&mark-y=21&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xOTMmaD0xMTAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="保存を押したら、メールが送信されます。ご不安であれば、文面をご自分のメールにコピペしてご使用いただいても構いません。" />
-</div>
+    <div><h3>6. 保存を押したら、メールが送信されます。ご不安であれば、文面をご自分のメールにコピペしてご使用いただいても構いません。</h3>
+    <img src="https://images.tango.us/workflows/2259d177-3584-4ab8-840e-80df7ba0b1c4/steps/ede45794-5fd0-4e13-a98a-9a81cc6b2d00/bb30bbb6-c7ce-4005-91f7-ed28d4be67a4.png?fm=png&crop=focalpoint&fit=crop&fp-x=0.9632&fp-y=0.0306&fp-z=2.9063&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=975&mark-y=21&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xOTMmaD0xMTAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" style="border-radius: 8px; border: 1px solid #F4F2F7;" width="600" alt="保存を押したら、メールが送信されます。ご不安であれば、文面をご自分のメールにコピペしてご使用いただいても構いません。" />
+    </div>
 
-<br/>
-<hr/>
+    <br/>
+    <hr/>
 
 
 
@@ -923,11 +992,11 @@
                 <li>
                     <strong>請求明細データ生成 (生徒基本情報管理アプリ内 機能):</strong>
                     <ul>
-                        <li><strong>操作:</strong> 対象月を選択し、請求対象（「月決め」「保育・食事等」「長期休み」など）にチェックを入れて「データ生成」を実行。通常は「月決め」と「保育・食事等」を別々に生成します。長期休み月は「長期休み」も生成。</li>
+                        <li><strong>操作:</strong> 対象月を選択し、請求対象（「月極」「保育・食事等」「長期休み」など）にチェックを入れて「データ生成」を実行。通常は「月極」と「生徒保育（保育・食事等）」にチェックを入れます。長期休み月は「長期休み」も生成。</li>
                         <li>
                             <strong>計算ロジック:</strong>
                             <ul>
-                                <li><strong>月決め:</strong> 「会員契約」の月額料金関連項目（施設維持費、エデュテン等）を集計。</li>
+                                <li><strong>月極:</strong> 「会員契約」の月額料金関連項目（施設維持費、エデュテン等）を集計。</li>
                                 <li><strong>保育・食事等:</strong> 「生徒予定実績」の日次データから、保育時間、食事回数、習い事受講回数、送迎利用回数などをカウントし、登録された単価に基づいて料金を計算。</li>
                                 <li><strong>長期休み:</strong> 「長期休みアプリ」で入力された利用希望と、「生徒予定実績」の実際利用データに基づき、「コマ数差額」を計算（後述）。イベント参加費なども集計。</li>
                             </ul>
@@ -982,7 +1051,7 @@
             <div class="workflow">
                 <ol>
                     <li><strong>スケジュール確認:</strong> 当月の請求スケジュールを確認し、各締切日を把握。</li>
-                    <li><strong>明細生成:</strong> 「請求明細データ生成」で、対象月と請求項目（月決め、保育・食事等、長期休み）を選択し、実行。</li>
+                    <li><strong>明細生成:</strong> 「請求明細データ生成」で、対象月と請求項目（月極、保育・食事等、長期休み）を選択し、実行。</li>
                     <li><strong>内容確認・修正:</strong> 「請求明細」画面で、生成された全生徒の明細内容を精査。特にコマ数差額や手動調整が必要な項目を確認し、必要に応じて修正。</li>
                     <li><strong>請求確定:</strong> 最終確認後、締切日までに「請求確定」を実行。</li>
                     <li><strong>データ生成:</strong> 「PDF・D-Collect生成」を実行。</li>
@@ -1278,67 +1347,72 @@
         <footer style="text-align: center; margin-top: 2rem; color: #777; font-size: 0.9rem;">
             <p>© 2023 えすこーと管理システム</p>
         </footer>
+    </div><!-- .content-container 終了 -->
         
-        <!-- JavaScript追加 -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // ハンバーガーメニュー制御
-                const navToggle = document.querySelector('.nav-toggle');
-                const navMenu = document.querySelector('.nav-menu');
-                const navOverlay = document.querySelector('.nav-overlay');
-                
-                navToggle.addEventListener('click', function() {
-                    navToggle.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                    navOverlay.classList.toggle('active');
+    <!-- JavaScript追加 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ハンバーガーメニュー制御 - モバイルのみ
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navOverlay = document.querySelector('.nav-overlay');
+            
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+            });
+            
+            navOverlay.addEventListener('click', function() {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                navOverlay.classList.remove('active');
+            });
+            
+            // トップへ移動ボタン
+            document.querySelector('.nav-top-button').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
                 });
-                
-                navOverlay.addEventListener('click', function() {
+                // メニューを閉じる（モバイル時のみ）
+                if (window.innerWidth <= 768) {
                     navToggle.classList.remove('active');
                     navMenu.classList.remove('active');
                     navOverlay.classList.remove('active');
-                });
-                
-                // トップへ移動ボタン
-                document.querySelector('.nav-top-button').addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                    // メニューを閉じる
-                    navToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    navOverlay.classList.remove('active');
-                });
-                
-                // メニュー内のリンクをクリックしたらメニューを閉じる
-                document.querySelectorAll('.nav-menu a').forEach(function(link) {
-                    link.addEventListener('click', function() {
+                }
+            });
+            
+            // メニュー内のリンクをクリックしたらメニューを閉じる（モバイル時のみ）
+            document.querySelectorAll('.nav-menu a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
                         navToggle.classList.remove('active');
                         navMenu.classList.remove('active');
                         navOverlay.classList.remove('active');
-                    });
-                });
-                
-                // スクロールボタン機能
-                const scrollTopBtn = document.querySelector('.scroll-top');
-                const scrollBottomBtn = document.querySelector('.scroll-bottom');
-                
-                scrollTopBtn.addEventListener('click', function() {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                });
-                
-                scrollBottomBtn.addEventListener('click', function() {
-                    window.scrollTo({
-                        top: document.body.scrollHeight,
-                        behavior: 'smooth'
-                    });
+                    }
                 });
             });
-        </script>
-    </body>
+            
+            // スクロールボタン機能
+            const scrollTopBtn = document.querySelector('.scroll-top');
+            const scrollBottomBtn = document.querySelector('.scroll-bottom');
+            
+            scrollTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            scrollBottomBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html> 
