@@ -1317,57 +1317,112 @@
         
         <section id="qa" class="card">
             <h2>8. システム関連 Q&A</h2>
-            
-            
+            <!-- Q&A Section - Accordion Style -->
+            <!-- Note: Requires CSS for styling (e.g., cursor: pointer on questions) and potentially smoother transitions. -->
+            <!-- JavaScript for toggling visibility is included below. -->
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> 夏休みの申込みフォームで保護者がメールアドレスを間違えた場合、修正は必要？そのアドレスは今後使う？</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> そのメールアドレスは回答の自動返信のみに使用し、今後使われません。正しいアドレスに回答内容を送りたい場合は、編集リンクから修正して再提出すれば送付されます。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-1" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: 夏休みの申込みフォームで保護者がメールアドレスを間違えた場合、修正は必要？そのアドレスは今後使う？
+                </h4>
+                <div id="qa-answer-1" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: そのメールアドレスは回答の自動返信のみに使用し、今後使われません。正しいアドレスに回答内容を送りたい場合は、編集リンクから修正して再提出すれば送付されます。</p>
                 </div>
             </div>
-            
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> 合宿イベントはどこから参加申込・訂正入力する？</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> 長期休みアプリの「長期休みスケジュール」にて、通常のイベントと同様に追加できます。参加合宿をイベント欄に追加後、生徒基本情報アプリから請求明細生成を行うと、合宿・イベント分も含めて生成されます。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-2" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: 合宿イベントはどこから参加申込・訂正入力する？
+                </h4>
+                <div id="qa-answer-2" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: 長期休みアプリの「長期休みスケジュール」にて、通常のイベントと同様に追加できます。参加合宿をイベント欄に追加後、生徒基本情報アプリから請求明細生成を行うと、合宿・イベント分も含めて生成されます。</p>
                 </div>
             </div>
-            
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> 生徒基本情報管理アプリで請求明細生成を押したが、データ生成が動いている気配がない。</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> メニュー「請求」右側の「請求明細」には先に表示されます。「請求」枠（左側）への反映には1〜2時間かかる場合があります。時間をおいて確認してください。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-3" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: 生徒基本情報管理アプリで請求明細生成を押したが、データ生成が動いている気配がない。
+                </h4>
+                <div id="qa-answer-3" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: メニュー「請求」右側の「請求明細」には先に表示されます。「請求」枠（左側）への反映には1〜2時間かかる場合があります。時間をおいて確認してください。</p>
                 </div>
             </div>
-        
-            
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> 音信不通だった保護者への再手続き案内に必要な「仮保護者ID」はどこで発行する？</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> まだアプリに会員情報を登録していない場合、問い合わせアプリで該当生徒を選択し、メールテンプレ「入会が決まった場合に手続きを案内するメール」を選択すると、仮保護者IDが入った文面が生成されます。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-4" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: 音信不通だった保護者への再手続き案内に必要な「仮保護者ID」はどこで発行する？
+                </h4>
+                <div id="qa-answer-4" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: まだアプリに会員情報を登録していない場合、問い合わせアプリで該当生徒を選択し、メールテンプレ「入会が決まった場合に手続きを案内するメール」を選択すると、仮保護者IDが入った文面が生成されます。</p>
                 </div>
             </div>
-            
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> 保護者から口座変更の希望があった場合の対応方法は？</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> 再度オンライン口座振替をしていただき、完了後に生徒基本情報管理の「保護者」画面で口座情報を更新してください。※D-collect生成開始後の変更はエラーの可能性があるため、請求締め切り間際は避けてください。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-5" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: 保護者から口座変更の希望があった場合の対応方法は？
+                </h4>
+                <div id="qa-answer-5" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: 再度オンライン口座振替をしていただき、完了後に生徒基本情報管理の「保護者」画面で口座情報を更新してください。※D-collect生成開始後の変更はエラーの可能性があるため、請求締め切り間際は避けてください。</p>
                 </div>
             </div>
-            
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> 既に生成した週について、再度シフト生成をしようとすると「既に生成している」と出てできない。</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> メニュー「シフトデータ生成」で該当週を選択→「ゴミ箱ボタン」を選択して削除します。その後、+ボタンから再生成できます。※この操作で生成済みの保育予定・実績データ等は削除されません。データの削除は別途必要です。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-6" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: 既に生成した週について、再度シフト生成をしようとすると「既に生成している」と出てできない。
+                </h4>
+                <div id="qa-answer-6" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: メニュー「シフトデータ生成」で該当週を選択→「ゴミ箱ボタン」を選択して削除します。その後、+ボタンから再生成できます。※この操作で生成済みの保育予定・実績データ等は削除されません。データの削除は別途必要です。</p>
                 </div>
             </div>
-            
+
             <div class="qa-item">
-                <h4 class="question"><i class="fas fa-question-circle"></i> シフトを再生成（削除→生成）したら、1回目のデータも残ってしまった。</h4>
-                <div class="answer">
-                    <p><i class="fas fa-info-circle"></i> 「シフトデータ生成」行の削除では生成済みデータは消えません。手動で保育予定・実績や勤務予定・実績を削除する必要があります（チェックボックスで一括削除可能）。</p>
+                <h4 class="question accordion-trigger" role="button" aria-expanded="false" aria-controls="qa-answer-7" style="cursor: pointer;">
+                    <i class="fas fa-question-circle"></i> Q: シフトを再生成（削除→生成）したら、1回目のデータも残ってしまった。
+                </h4>
+                <div id="qa-answer-7" class="answer accordion-content" role="region" aria-hidden="true" style="display: none; padding-left: 20px; margin-top: 5px;">
+                    <p><i class="fas fa-info-circle"></i> A: 「シフトデータ生成」行の削除では生成済みデータは消えません。手動で保育予定・実績や勤務予定・実績を削除する必要があります（チェックボックスで一括削除可能）。</p>
                 </div>
             </div>
+
+            <!-- JavaScript to enable accordion functionality -->
+            <!-- This script should ideally be placed in a separate .js file or at the end of the <body> -->
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const triggers = document.querySelectorAll('.accordion-trigger');
+                triggers.forEach(trigger => {
+                  // Ensure the trigger is clickable (e.g., using Enter/Space keys)
+                  trigger.setAttribute('tabindex', '0');
+
+                  const toggleAccordion = (event) => {
+                     // Allow activation with Enter or Space keys besides click
+                    if (event.type === 'keydown' && (event.key !== 'Enter' && event.key !== ' ')) {
+                        return;
+                    }
+                    event.preventDefault(); // Prevent default action for space/enter if needed
+
+                    const content = document.getElementById(trigger.getAttribute('aria-controls'));
+                    const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+                    trigger.setAttribute('aria-expanded', !isExpanded);
+                    content.setAttribute('aria-hidden', isExpanded);
+
+                    if (!isExpanded) {
+                      // Expand
+                      content.style.display = 'block';
+                      trigger.classList.add('active'); // Optional: for styling
+                    } else {
+                      // Collapse
+                      content.style.display = 'none';
+                      trigger.classList.remove('active'); // Optional: for styling
+                    }
+                  };
+
+                  trigger.addEventListener('click', toggleAccordion);
+                  trigger.addEventListener('keydown', toggleAccordion);
+                });
+              });
+            </script>
+
         </section>
 
         <footer style="text-align: center; margin-top: 2rem; color: #777; font-size: 0.9rem;">
